@@ -28,3 +28,11 @@ else
 echo "email is invalid"
 fi
 
+read -p "enter phone number with country code " phoneNo
+pattern4="^[\+]?[0-9]{2}[ ][6-9][0-9]{9}$"
+if [[ $phoneNo =~ $pattern4 ]]
+then
+echo "Phone Number is valid"
+else
+echo "Phone Number is invalid"
+fi
