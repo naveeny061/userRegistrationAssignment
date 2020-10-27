@@ -38,7 +38,7 @@ echo "Phone Number is invalid"
 fi
 
 read -p "enter password " password
-pattern5="^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}$"
+pattern5="^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$"
 if [[ $password =~ $pattern5 ]]
 then
 echo "Password is valid"
