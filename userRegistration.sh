@@ -20,7 +20,7 @@ echo "Name is invalid"
 fi
 
 read -p "enter email " email
-pattern3="^[a-zA-Z][a-zA-Z0-9]*([\.][a-zA-Z0-9]+)*(@[a-zA-Z0-9]+[\.][a-zA-Z0-9]{2,})([/.][a-zA-Z0-9]{2})?$"
+pattern3="^[a-zA-Z][a-zA-Z0-9-+]*([\.][a-zA-Z0-9]+)*(@[a-zA-Z0-9]+[\.][a-zA-Z0-9]{2,})([/.][a-zA-Z0-9]{2,})?[,]?$"
 if [[ $email =~ $pattern3 ]]
 then
 echo "email is valid"
